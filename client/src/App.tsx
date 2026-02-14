@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import API from "./api/api";
-import History from "./components/history.jsx";
+import History from "./components/history";
 import TranscriptInput from "./components/transcripinput";
-import TaskList from "./components/taskList.jsx";
+import TaskList from "./components/taskList";
 import Filters from "./components/filter";
-import Status from "./components/status.jsx";
+import Status from "./components/status";
 
 function App() {
   const [tasks, setTasks] = useState([]);
