@@ -1,8 +1,13 @@
 import dotenv from 'dotenv';
-import express from 'express';
-import cors from 'cors';
+dotenv.config({path:'./.env'});
+import app from './app.js'
+import { dbConnect } from './DB/db.js';
 
 
-dotenv.config();
 
+dbConnect()
+
+app.listen(process.env.PORT||5000,()=>{
+console.log("server started")
+})
 
