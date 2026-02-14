@@ -13,7 +13,7 @@ router.put("/:id", async (req, res) => {
   const updated = await Action.findByIdAndUpdate(
     req.params.id,
     req.body,
-    { new: true }
+    { returnDocument: "after" }
   );
   res.json(updated);
 });
