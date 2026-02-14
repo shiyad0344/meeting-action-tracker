@@ -25,10 +25,10 @@ router.delete("/:id", async (req, res) => {
 });
 
 router.get("/history", async (req, res) => {
-  const transcripts = await Transcript.find()
+ const transcripts = await Transcript.find()
     .sort({ createdAt: -1 })
     .limit(5);
   res.json(transcripts);
-});
+}); 
 
 export default router;
