@@ -12,4 +12,10 @@ app.use(express.json({limit:'16kb'}));
 app.use(express.urlencoded({extended:true,limit:'16kb'}));
 
 
+import extractRoute from './routes/extract.route.js';
+app.use("/api/extract",extractRoute)
+app.get("/",(req,res)=>{
+    res.send("Hello from server")
+})
+
 export default app;
