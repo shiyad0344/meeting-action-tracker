@@ -14,8 +14,11 @@ app.use(express.urlencoded({extended:true,limit:'16kb'}));
 
 import extractRoute from './routes/extract.route.js';
 app.use("/api/extract",extractRoute)
-app.get("/",(req,res)=>{
-    res.send("Hello from server")
-})
+// app.get("/",(req,res)=>{
+//     res.send("Hello from server")
+// })
+
+import crudtaskRoute from './routes/CRUDtask.route.js'
+app.use("/api/tasks",crudtaskRoute)
 
 export default app;
