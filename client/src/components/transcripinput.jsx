@@ -6,7 +6,10 @@ function TranscriptInput({ setTasks }) {
   const [loading, setLoading] = useState(false);
 
   const handleExtract = async () => {
-    if (!transcript.trim()) return;
+  if (!transcript.trim())  {
+    alert("Transcript cannot be empty.")
+    return};
+  
 
     try {
       setLoading(true);

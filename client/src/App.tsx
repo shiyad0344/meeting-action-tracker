@@ -4,6 +4,7 @@ import History from "./components/history.jsx";
 import TranscriptInput from "./components/transcripinput";
 import TaskList from "./components/taskList.jsx";
 import Filters from "./components/filter";
+import Status from "./components/status.jsx";
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -26,6 +27,7 @@ function App() {
   return (
     <div style={{ padding: "40px", maxWidth: "800px", margin: "auto" }}>
       <h1>Meeting Action Tracker</h1>
+      <Status/>
 
       <TranscriptInput setTasks={setTasks} />
       <Filters setFilter={setFilter} />

@@ -21,4 +21,7 @@ app.use("/api/extract",extractRoute)
 import crudtaskRoute from './routes/CRUDtask.route.js'
 app.use("/api/tasks",crudtaskRoute)
 
+import statusRoute from './routes/status.route.js'
+app.use("/api",statusRoute)
+
 export default app;
