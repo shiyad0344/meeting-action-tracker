@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:8000/api",
+  baseURL: "https://shiyad0344-meeting-action-tracker-back-5cssun97u.vercel.app/api",
 });
 
 export default API;
