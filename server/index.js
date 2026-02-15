@@ -7,4 +7,5 @@ import { dbConnect } from './DB/db.js';
 
 dbConnect()
 
+export default app;
 
