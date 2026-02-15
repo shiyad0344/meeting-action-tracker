@@ -7,7 +7,4 @@ import { dbConnect } from './DB/db.js';
 
 dbConnect()
 
-// app.listen(process.env.PORT||5000,()=>{
-// console.log("server started")
-// })
 
