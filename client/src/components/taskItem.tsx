@@ -130,7 +130,7 @@ function TaskItem({ task, refreshTasks }: TaskItemProps) {
               <span className="inline-flex items-center gap-1.5">
                 <Calendar size={14} />
                 {task.dueDate
-                  ? new Date(task.dueDate + "T00:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" })
+                  ? new Date(task.dueDate).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })
                   : "No due date"}
               </span>
             </div>
