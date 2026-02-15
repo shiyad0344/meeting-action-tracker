@@ -4,7 +4,7 @@ import cors from 'cors'
 const app=express();
 
 app.use(cors({
-    origin: "https://shiyad0344-meeting-action-tracker-f.vercel.app/",
+    origin: "https://shiyad0344-meeting-action-tracker-f.vercel.app",
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
  }));
